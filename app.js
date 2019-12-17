@@ -29,6 +29,8 @@ function resetTimer() {
   lap.innerText = 'Lap';
   minutes.innerText = '00';
   seconds.innerText = '00';
+  numOfSecs = 0;
+  numOfMinutes = 0;
 }
 
 function incrementTimer(){
