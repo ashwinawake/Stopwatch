@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Getting Started with JavaScript</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style>
+     body, .jumbotron{padding:30px;}
+     .timer{font-size: 330px;}
+     .lapField{font-size: 50px;}
+     .btn{font-size:50px;}
+  </style>
+  <body>
+
+    <div class="jumbotron text-center">
+      <!-- timer -->
+       <div class="timer">
+         <span class="minutes">00</span>:<span class="seconds">00</span>
+       </div>
+       <div class="lapField">Lap
+         </div>
+       <div class="timer-buttons">
+         <button type="button" class="btn btn-lg btn-success" data-action="start">Start</button>
+         <button type="button" class="btn btn-lg btn-danger" data-action="stop">Stop</button>
+         <button type="button" class="btn btn-lg btn-info" data-action="lap">Lap</button>
+         <button type="button" class="btn btn-link btn-block" data-action="reset">Reset</button>
+       </div>
+    </div>
+
+    <script src="app.js">
+
+      </script>
+    </body>
+</head>
