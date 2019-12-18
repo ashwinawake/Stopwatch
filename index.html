@@ -5,7 +5,9 @@
   <title>Getting Started with JavaScript</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <style>
-     body{padding:30px;}
+     body{padding:20px;
+     width:100%;}
+     .border{style="solid"}
      .timer{font-size: 330px;}
      .lapField{font-size: 50px;}
      .btn{font-size:50px;}
@@ -13,18 +15,19 @@
   <body style="background-image: url('bg.jpg');">
 
     <div class="text-center">
+      <div class="lapField">
+        </div>
       <!-- timer -->
        <div class="timer">
          <span class="minutes">00</span>:<span class="seconds">00</span>
        </div>
-       <div class="lapField">Lap
-         </div>
        <div class="timer-buttons">
-         <button type="button" class="btn btn-lg btn-success" data-action="start">Start</button>
-         <button type="button" class="btn btn-lg btn-danger" data-action="stop">Stop</button>
-         <button type="button" class="btn btn-lg btn-info" data-action="lap">Lap</button>
-         <button type="button" class="btn btn-link btn-block" data-action="reset">Reset</button>
+         <button type="button" class="btn btn-lg btn-success rounded-pill" data-action="start">Start</button>
+         <button type="button" class="btn btn-lg btn-danger rounded-pill" data-action="stop">Stop</button>
+         <button type="button" class="btn btn-lg btn-info rounded-pill" data-action="lap">Lap</button>
+         <button type="button" class="btn btn-lg btn-primary rounded-pill" data-action="reset">Reset</button>
        </div>
+
     </div>
 
     <script src="app.js">

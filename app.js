@@ -10,6 +10,7 @@ let interval;
 let isRunning = false;
 let numOfMinutes;
 let numOfSecs;
+let count = 0;
 // Create functions
 function startTimer() {
   if(isRunning) return;
@@ -26,7 +27,8 @@ function stopTimer() {
 function resetTimer() {
   stopTimer();
   timerTime = 0;
-  lap.innerText = 'Lap';
+  count=0;
+  lap.innerText = '';
   minutes.innerText = '00';
   seconds.innerText = '00';
   numOfSecs = 0;
@@ -43,11 +45,16 @@ function incrementTimer(){
 
 //Add a snapshot function
 function lapTimer(){
+  if(!isRunning) return;
+  if(count<10){
   let newEl = document.createElement('span');
   let msg = padTimer(numOfMinutes)+':'+padTimer(numOfSecs)+' ';
   let newText = document.createTextNode(msg);
   newEl.appendChild(newText);
+  newEl.setAttribute("class","border border-dark");
   lap.appendChild(newEl);
+  count++;
+}
    //lap.innerHTML = padTimer(numOfMinutes)+':'+padTimer(numOfSecs);
 }
 
